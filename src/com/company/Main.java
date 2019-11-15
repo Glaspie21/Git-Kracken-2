@@ -1,6 +1,14 @@
 package com.company;
 
 public class Main {
+	
+	public static void raiseAlarm(int numOfWarnings) {
+	    int i = 1;
+	   while (i <= numOfWarnings) {
+	       System.out.println("warning");
+	       i = i + 1;
+	    }
+	}
 
     public static void countBlocks(int levels) {
         int total = 0;
@@ -28,6 +36,9 @@ public class Main {
         }
     }
 
+	
+	
+
     public static void main(String[] args) {
 	// write your code here
         // this is my inner and outer for loop
@@ -39,6 +50,7 @@ public class Main {
         }
         rollASix();
         countBlocks(7);
+	raiseAlarm(7);
 	}
 
 
